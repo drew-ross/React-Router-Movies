@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useRouteMatch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const MovieList = props => {
 
@@ -18,7 +18,7 @@ function MovieDetails({ movie }) {
   const { title, director, metascore, stars } = movie;
 
   return (
-    <div className="movie-card">
+    <div className="movie-card movie-list-card">
 
       <h2>{title}</h2>
       <div className="movie-director">

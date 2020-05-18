@@ -16,6 +16,10 @@ body {
   margin: 1rem auto;
 }
 
+.movie-list-card:hover {
+  background: rgb(130, 202, 199);
+}
+
 .movie-director {
   padding: 4px 0;
   font-size: 0.8rem;
@@ -27,6 +31,7 @@ body {
 }
 
 .saved-list {
+  width: 100%;
   background-color: #fff;
   border: 0;
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
@@ -47,6 +52,13 @@ body {
 
 .saved-movie {
   margin: 0 10px;
+  padding: 6px 10px;
+  background-color: lightseagreen;
+  color: white;
+  border: none;
+  font-size: inherit;
+  border: 1px solid lightseagreen;
+  border-radius: 4px;
 }
 .saved-active {
   color: blue;
@@ -69,16 +81,26 @@ body {
 .save-button:hover {
   background-color: green;
   color: white;
+  cursor: pointer;
 }
 
-.home-button {
+.button {
   padding: 6px 10px;
-  background-color: lightskyblue;
+  background-color: rgb(160, 54, 71);
+  color: white;
   border: none;
   font-size: inherit;
+  border: 1px solid rgb(160, 54, 71);
+  border-radius: 4px;
 }
 
-a, Link {
+.button:hover {
+  background: white;
+  color: rgb(160, 54, 71);
+}
+
+a {
   text-decoration: none;
   color: inherit;
+  margin: 0 1rem;
 }
