@@ -67,6 +67,13 @@ body {
 }
 
 .home-button {
-  padding: 5px 10px;
+  padding: 6px 10px;
   background-color: lightskyblue;
+  border: none;
+  font-size: inherit;
+}
+
+a, Link {
+  text-decoration: none;
+  color: inherit;
 }
