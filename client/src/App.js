@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Route, Switch, Link } from 'react-router-dom';
 import SavedList from './Movies/SavedList';
 import MovieList from './Movies/MovieList';
+import Movie from './Movies/Movie'
 
 const App = () => {
   const [savedList, setSavedList] = useState([]);
@@ -29,11 +30,11 @@ const App = () => {
   return (
     <div>
       <SavedList list={savedList} />
-      <Route>
-
+      <Route path={`/movies/:movieId`}>
+        <Movie />
       </Route>
       <Route path='/'>
-        <MovieList movies={movieList}/>
+        <MovieList movies={movieList} />
       </Route>
     </div>
   );
